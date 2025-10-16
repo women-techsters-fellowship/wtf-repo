@@ -1,0 +1,10 @@
+About Me
+---------
+Name: Juliet Nwaeze
+Occupation: DevOps Engineer
+
+My Goals:
+To Automate processes, use tools like Jenkins, GitHub Actions, or GitLab CI/CD to automate build, test, and deployment pipelines. Reduce manual errors and speed up software delivery. and empower people with disabilities.
+
+My Hobbies:
+making money, designing, exploring new tech tools, and spending time with family
