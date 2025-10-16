@@ -3,7 +3,7 @@
 # Script: liberty.sh
 # Description: A short description about Liberty
 # Author: Liberty Fakolade
-# Date: October 15, 2025
+# Date: October 16, 2025
 
 libby() {
     firstname="Liberty"
