@@ -1,4 +1,7 @@
+#!/bin/bash
+
 function name(){
-echo " My name is Susan Amechi and I'm a 300L Software Enginnering Student at the Federal University Of Technology, Owerri "
+    echo " My first name is $1 and my lastname is $2"
+    echo " I'm a software engineering student"
 }
-name
+name Susan Amechi
