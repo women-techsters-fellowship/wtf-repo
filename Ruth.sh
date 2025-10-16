@@ -10,7 +10,7 @@ funfact="I love swimming"
 sleep 5
 
 {
-    echo "### Firstname: $firstname"
+    echo "Firstname: $firstname"
     echo ""
     echo "Lastname: $lastname"
     echo ""
