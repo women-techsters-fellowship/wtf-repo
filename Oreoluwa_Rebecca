@@ -1,0 +1,32 @@
+#!/bin/bash
+# ============================================
+# Script Name: oreoluwa_Rebecca.sh
+# Author: Oreoluwa Rebecca Olusinde
+# ============================================
+
+# Variables
+FIRST_NAME="Oreoluwa"
+LAST_NAME="Olusinde"
+FULL_NAME="$FIRST_NAME Rebecca $LAST_NAME"
+ROLE="DevOps Trainee"
+FELLOWSHIP="Women Techsters Fellowship (2025 Cohort)"
+INTERESTS="Technology, Lifestyle, Content Creation, and Music"
+LANGUAGES="English and Yoruba"
+FUN_FACT="Soft techie girl energy — calm, structured, and creative"
+
+# Function to display information
+display_info() {
+    echo "==========================================="
+    echo "         ABOUT $FULL_NAME"
+    echo "==========================================="
+    echo "Role:              $ROLE"
+    echo "Fellowship:        $FELLOWSHIP"
+    echo "Interests:         $INTERESTS"
+    echo "Languages:         $LANGUAGES"
+    echo "-------------------------------------------"
+    echo "Fun Fact:          $FUN_FACT"
+    echo "==========================================="
+}
+
+# Call the function
+display_info
