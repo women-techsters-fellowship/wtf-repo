@@ -10,8 +10,8 @@ function aboutMe() {
     profession: "Backend Developer, currently learning Devops.",
     location: "Abuja, Nigeria",
     background: "Bachelor’s degree in Human Physiology",
-    experience: "Completed internship at Tidelab, learned Node.js, and developed multiple backend projects including Prime Choice and Insure Website.",
-    currentFocus: "Upskilling in DevOps and expanding expertise in backend technologies.",
+    experience: "I have worked on a couple of projects, developed multiple backend projects including Prime Choice and Insure Website.",
+    currentFocus: "Upskilling in DevOps at Women Techsters Fellowship  and expanding expertise in backend technologies.",
     passion: "Building impactful tech solutions, learning, and continuous growth."
   };
 
