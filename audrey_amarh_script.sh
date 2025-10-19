@@ -12,6 +12,15 @@ audreyBio() {
     location="Accra, Ghana"
     hobby="Learning AI/ML, building projects, and exploring new tech ideas"
 
+    # Fun tech quotes
+    quotes=(
+      "“Every line of code brings me closer to innovation 🚀”"
+      "“Automation is my love language ❤️”"
+      "“I break things to build them better 💻”"
+      "“Keep calm and deploy again 🧘🏽‍♀️”"
+      "“AI won’t replace us — it’ll upgrade us 🤖”"
+    )
+
     echo "Hi there!"
     sleep 1
     echo "My name is $firstName $lastName."
@@ -30,6 +39,14 @@ audreyBio() {
         sleep 2
         echo "Okay, here’s one: I love finding creative ways to solve problems!"
         sleep 1
+
+        # Pick and show a random quote
+        random_index=$((RANDOM % ${#quotes[@]}))
+        echo
+        echo "💬 Here's a random tech quote I love:"
+        echo "${quotes[$random_index]}"
+        sleep 1
+
         echo "Thanks for asking! 😊"
     else
         echo "No worries! It was nice meeting you. Have a great day!"
@@ -38,4 +55,3 @@ audreyBio() {
 
 # Call the function
 audreyBio
-
