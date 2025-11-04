@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Hi') {
             steps {
-                echo 'Hello Antwiwaa'
+                echo 'Nana Afua Antwiwaa Conduah , using webhooks in jenkins'
             }
         }
     }
