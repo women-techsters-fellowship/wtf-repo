@@ -14,7 +14,7 @@ pipeline {
         }
          stage("deploy") {
                steps { 
-                     echo 'deploying the app immediately for testing'
+                     echo 'deploying the app immediately for testing again'
 
                 } 
 
