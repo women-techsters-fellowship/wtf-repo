@@ -12,5 +12,11 @@ pipeline {
                 echo 'still running pipeline. This is the second'
             }
         }
+         stage("deploy") {
+               steps { 
+                     echo 'deploying the app immediately'
+                } 
+
+        }
     }
 }
