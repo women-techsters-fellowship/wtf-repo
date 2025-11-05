@@ -7,10 +7,14 @@ pipeline {
                 echo 'Hello World'
             }
         }
-        stage("hi"){
+        stage("hi") {
             steps {
                 echo "still running pipeline. This is the second step"
             }
+	stage("deploy") {
+	      steps {
+		    echo "deploying an app immediately"
+		}	
         }
     }
 }
