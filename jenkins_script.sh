@@ -7,7 +7,7 @@ set -x
 
 #### Description: For testing jenkins Job with git #####
 
-echo "Jenkins  went to git to pull and run this script"
+echo "Jenkins went to git to pull and run this script"
 
 
 sleep 10
