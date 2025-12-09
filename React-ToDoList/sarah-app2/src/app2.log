@@ -1,0 +1,10 @@
+nohup: ignoring input
+
+> sarah-app2@0.0.0 dev
+> vite
+
+
+  VITE v7.2.4  ready in 459 ms
+
+  ➜  Local:   http://localhost:5175/
+  ➜  Network: use --host to expose

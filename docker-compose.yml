@@ -1,0 +1,58 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: wtf_backend
+    env_file:
+      - ./backend/.env
+    ports:
+      - "5000:5000"
+    depends_on:
+      mongo:
+        condition: service_healthy
+    restart: always
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: ./React-ToDoList/dive-react-app
+      dockerfile: Dockerfile
+    container_name: wtf_frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      backend:
+        condition: service_started
+    restart: always
+    networks:
+      - app-network
+
+  mongo:
+    image: mongo:6.0
+    container_name: mongo-db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: sarah
+      MONGO_INITDB_ROOT_PASSWORD: sarah123
+    volumes:
+      - mongo-data:/data/db
+    ports:
+      - "27017:27017"
+    restart: always
+    healthcheck:
+      test: ["CMD", "mongo", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - app-network
+
+volumes:
+  mongo-data:
+
+networks:
+  app-network:
+    driver: bridge
